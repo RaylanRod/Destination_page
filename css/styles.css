@@ -1,0 +1,56 @@
+.headingbox {
+    width: 100vw;
+    height: 300px;
+    /* Set background image, position, size, and other styles */
+    border: 5px solid green;
+}
+
+ .page-heading {
+     background-image: url('../pictures/Traveling2.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 300px;
+     /* Adjust the height as needed */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: white;
+ }
+
+.rightbox {
+    width: 600px;
+    height: 900px;
+    margin-top: 20px;
+    /* background: #C2AD97; */
+    border: 5px solid blue;
+    /* Set background image, position, size, and other styles */
+}
+
+.leftbox {
+    width: 600px;
+    height: 900px;
+    margin-top: 20px;
+    /* background: #E4E3E0; */
+    border: 5px solid red;
+    /* Set background image, position, size, and other styles */
+}
+
+body {
+    background-image: url(../pictures/Traveling.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    color: #3F312F;
+}
+ /* .box {
+     border: 2px solid #000;
+     padding: 20px;
+ } */
+
+.textsize {
+    font-size: large;
+    font-weight: bold;
+    color: #CC6A1C
+}
