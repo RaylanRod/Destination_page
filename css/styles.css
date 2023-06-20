@@ -20,7 +20,7 @@
 
 .rightbox {
     width: 600px;
-    height: 900px;
+    height: 800px;
     margin-top: 20px;
     /* background: #C2AD97; */
     border: 5px solid blue;
@@ -29,7 +29,7 @@
 
 .leftbox {
     width: 600px;
-    height: 900px;
+    height: 800px;
     margin-top: 20px;
     /* background: #E4E3E0; */
     border: 5px solid red;
@@ -38,19 +38,38 @@
 
 body {
     background-image: url(../pictures/Traveling.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 .heading{
     color: #3F312F;
 }
- /* .box {
-     border: 2px solid #000;
-     padding: 20px;
- } */
+
+.list-group-scroll {
+    overflow: auto;
+    max-height: 780px;
+    /* Adjust the height as needed */
+}
+
+.list-group-item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Adjust the height as needed */
+}
+
+.list-group-item-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .textsize {
     font-size: large;
     font-weight: bold;
     color: #CC6A1C
+}
+
+.image {
+    position: relative;
 }

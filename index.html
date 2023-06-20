@@ -39,54 +39,55 @@
             <div class="leftbox bg-secondary bg-opacity-25">
               <form action="">
                 <div class="mb-3">
-                  <label for="formGroupExampleInput" class="form-label"
+                  <label for="formGroupExampleInput" class="form-label fw-bold"
                     >Destination Name</label
                   >
                   <input
-                    required
                     type="text"
                     class="form-control"
-                    id="formGroupExampleInput"
+                    id="destination"
                     placeholder="Enter your Destination"
                   />
                 </div>
 
                 <div class="mb-3">
-                  <label for="formGroupExampleInput2" class="form-label"
-                    >Another label</label
+                  <label for="formGroupExampleInput2" class="form-label fw-bold"
+                    >Location</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="formGroupExampleInput2"
-                    placeholder="Another input placeholder"
+                    id="location"
+                    placeholder="Enter Location"
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="formGroupExampleInput2" class="form-label"
-                    >Another label</label
+                <div class="input-group mb-3">
+                  <span class="input-group-text btn btn-primary"
+                    >Location Photo</span
                   >
                   <input
+                    id="destinationPhoto"
                     type="text"
                     class="form-control"
-                    id="formGroupExampleInput2"
-                    placeholder="Another input placeholder"
+                    placeholder="Enter image URL"
+                    aria-label="Image URL"
+                    aria-describedby="image-url"
                   />
                 </div>
 
                 <div class="mb-3">
-                  <label for="formGroupExampleInput3" class="form-label"
+                  <label for="formGroupExampleInput3" class="form-label fw-bold"
                     >Description</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="formGroupExampleInput3"
-                    placeholder="Enter description"
+                    id="description"
+                    placeholder="Enter Description"
                   />
                 </div>
 
-                <div class="d-grid">
+                <div id="submitList" class="d-grid">
                   <button class="btn btn-primary" type="button">
                     Add To List
                   </button>
@@ -94,28 +95,20 @@
               </form>
             </div>
           </div>
-
+          <!-- Right box -->
+          <!-- Right box -->
           <div class="col-md-6">
-            <div class="rightbox bg-primary bg-opacity-25"></div>
+            <div class="rightbox bg-primary bg-opacity-25">
+              <div class="list-group image" id="destinationList">
+                <div class="list-group-scroll"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- scritpt -->
-    <script>
-      document
-        .getElementById("wishlist-form")
-        .addEventListener("submit", function (event) {
-          var destinationNameInput = document.getElementById(
-            "formGroupExampleInput"
-          );
-          if (!destinationNameInput.value) {
-            alert("Destination Name is required!");
-            event.preventDefault();
-          }
-        });
-    </script>
-
+    <!-- script -->
+    <script src="./js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
